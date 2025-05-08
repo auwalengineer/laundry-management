@@ -1,0 +1,70 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-05-04 17:18:36.371930",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "accounting_settings",
+  "default_income_account",
+  "default_tax_account",
+  "auto_submit_invoice",
+  "email_invoice_to_customer"
+ ],
+ "fields": [
+  {
+   "fieldname": "accounting_settings",
+   "fieldtype": "Section Break",
+   "label": "Accounting Settings"
+  },
+  {
+   "fieldname": "default_income_account",
+   "fieldtype": "Link",
+   "label": "Default Income Account",
+   "options": "Account"
+  },
+  {
+   "fieldname": "default_tax_account",
+   "fieldtype": "Link",
+   "label": "Default Tax Account",
+   "options": "Account"
+  },
+  {
+   "default": "1",
+   "fieldname": "auto_submit_invoice",
+   "fieldtype": "Check",
+   "label": "Auto Submit Invoice"
+  },
+  {
+   "default": "1",
+   "fieldname": "email_invoice_to_customer",
+   "fieldtype": "Check",
+   "label": "Email Invoice to Customer"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2025-05-04 17:22:42.948697",
+ "modified_by": "Administrator",
+ "module": "Laundry Management",
+ "name": "Laundry Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
